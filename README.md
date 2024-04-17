@@ -74,7 +74,9 @@ I recommend a font size of 15 for my ASCII font and 14 for my Nerd Font but it's
 ### Color
 
 Next we can navigate to the "Colors" tab to set the terminal's theme.
-There are plenty of good default ones you can try out but if none of those are what you're looking for [Dracula]() and [Catppuccin]() are popular ones you can download.
+There are plenty of good default ones you can try out but if none of those are what you're looking for [Dracula](https://github.com/dracula/iterm) and [Catppuccin](https://github.com/catppuccin/iterm) are popular ones you can download.
+
+Just `cd ~/Downloads/` then `git clone <repository>`. After that go to the "Colors" tab again and use the drop-down to import the `<theme>.itermcolors` file.
 
 ### Transparency
 
