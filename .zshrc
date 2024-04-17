@@ -18,7 +18,6 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
@@ -37,7 +36,8 @@ export EDITOR="nvim"
 alias vim=nvim
 
 # eza aliases
-alias ls="eza"
-alias la="eza -la"
+alias ls="eza -G"
+alias la="eza -la --git --icons --group-directories-first"
+alias lt="eza -aTL 2 --icons"
 
 neofetch
