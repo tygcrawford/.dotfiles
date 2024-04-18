@@ -32,12 +32,17 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR="nvim"
 
-# aliases
+## aliases
+# use nvim
 alias vim=nvim
 
 # eza aliases
 alias ls="eza -G"
 alias la="eza -la --git --icons --group-directories-first"
 alias lt="eza -aTL 2 --icons"
+
+# man search
+alias sman="man \$(compgen -c | fzf)"
+alias stldr="tldr \$(compgen -c | fzf)"
 
 neofetch

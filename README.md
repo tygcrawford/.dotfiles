@@ -142,7 +142,17 @@ All of the following tools can be installed using `brew install <tool>`.
 
 ### fzf
 
-This is a fuzzy finder that can be used for anything. You can just run it in a directory to search all files or you can pipe some input into it for greater utility.
+This is a fuzzy finder that can be used for anything.
+You can just run it in a directory to search all files or you can combine it with other commands for greater utility.
+
+Here are some examples:
+```bash
+man $(compgen -c | fzf)
+
+cat <file> | fzf
+
+nano $(fzf)
+```
 
 ### bat
 
