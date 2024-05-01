@@ -27,12 +27,6 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
 
 export EDITOR="nvim"
 
@@ -46,7 +40,10 @@ alias la="eza -la --git --icons --group-directories-first"
 alias lt="eza -aTL 2 --icons"
 
 # man search
-alias sman="man \$(compgen -c | fzf)"
-alias stldr="tldr \$(compgen -c | fzf)"
+alias st="tldr --list | fzf --preview='tldr {}' --preview-window=70% | xargs tldr"
+alias sm="tldr --list | fzf --preview='man {}' --preview-window=70% | xargs man"
+
+# sed to gnu-sed
+alias sed=gsed
 
 neofetch
